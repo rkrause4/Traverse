@@ -1,0 +1,479 @@
+@import "_partial_dir";
+.container {
+    width: 70%;
+    max-width: 1060px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.parent {
+    position: relative;
+}
+
+.child {
+    @include centerer;
+}
+
+body {
+    font-size: 16px; // background: $font-grey;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.mdl-layout__header {
+    .mdl-layout__header-row {
+        background: $brand-blue;
+    }
+    .mdl-layout__drawer-button {
+        background: $brand-blue;
+    }
+    .mdl-layout__drawer-button:active {
+        outline: none;
+        background: $brand-light-blue;
+    }
+    .mdl-navigation__link {
+        font-size: 1.2rem;
+    }
+    .mdl-layout-title {
+        font-size: 1.75rem;
+    }
+    .mdl-layout__header-row {
+        background: $brand-blue;
+    }
+}
+
+.mdl-layout__header-row {
+    .mdl-navigation__link {
+        a {
+            color: $pure-white;
+        }
+    }
+}
+
+footer {
+    .mdl-mega-footer__drop-down-section {
+        li {
+            a {
+                color: $font-white;
+            }
+        }
+    }
+    .mdl-mega-footer__link-list {
+        li {
+            a {
+                color: $font-white;
+            }
+        }
+    }
+}
+
+.hero {
+    color: $pure-white;
+    height: 75vh;
+    background-image: url("../images/cove.jpg");
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../images/cove.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    h1,
+    h2,
+    h3,
+    h4 {
+        @include header_shadow;
+    }
+    .hero-textbox {
+        text-align: center;
+        width: 60%;
+        h1 {
+            font-size: 10rem;
+            margin-bottom: 0;
+        }
+        h2 {
+            margin-top: 0;
+            font-size: 2.25rem;
+            text-transform: capitalize;
+        }
+        h4 {
+            margin-top: 40px;
+            margin-bottom: 10px;
+            text-transform: capitalize;
+        }
+        i {
+            font-size: 6rem;
+        }
+    }
+}
+
+.packages {
+    margin: 50px 0;
+    .mdl-card__supporting-text {
+        height: 200px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .mdl-card__title-text {
+        font-size: 3rem;
+        color: $font-white;
+        @include header_shadow;
+    }
+    .package1>.mdl-card__title {
+        height: 150px;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url('../images/vacation/cayman_islands.jpg') no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .package2>.mdl-card__title {
+        height: 150px;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url('../images/vacation/Imperial_Beach_pier_Imperial_Beach_US.jpg') no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .package3>.mdl-card__title {
+        height: 150px;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url('../images/vacation/Porthcurno_beach_Porthcurno_UK.jpg') no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .package1-btn {
+        a {
+            background: $brand-light-blue;
+            color: $pure-white;
+            font-size: 1.2rem;
+        }
+    }
+    .package2-btn {
+        a {
+            background: $brand-red;
+            color: $pure-white;
+            font-size: 1.2rem;
+        }
+    }
+    .mdl-card__supporting-text {
+        ul {
+            list-style: none;
+            padding: 0;
+            li {
+                h5 {
+                    margin: 0;
+                    color: $brand-red;
+                }
+            }
+        }
+    }
+}
+
+.trending-vacations {
+    background: $font-white;
+    padding: 50px 0;
+    h2 {
+        text-align: center;
+        color: $brand-red;
+    }
+    .trending-vaca {
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            @include input-shadow;
+        }
+        h2 {
+            color: $brand-blue;
+            text-align: left;
+        }
+        a {
+            display: inline-block;
+            margin: auto;
+            padding: 10px 15px;
+            background: $brand-red;
+            color: $pure-white;
+            font-size: 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    }
+}
+
+.email {
+    margin: auto;
+    text-align: center;
+    background: $brand-blue-white;
+    padding: 50px 0;
+    h2 {
+        margin-top: 0;
+        color: $brand-red;
+        margin-bottom: 15px;
+    }
+    p {
+        font-size: 1.2rem;
+        color: $brnad-grey;
+        margin-bottom: 25px;
+    }
+    input {
+        display: inline-block;
+        padding: 10px 25px;
+        border-radius: 5px;
+        outline: none;
+        border: 1px solid transparent;
+        @include input-shadow;
+        width: 25%;
+    }
+    input:focus {
+        @include input-shadow-active;
+        border: 1px solid $brand-red;
+    }
+    input:active {
+        @include input-shadow-active;
+        border: 1px solid $brand-red;
+    }
+}
+
+// page 2 | Services
+.secondary-hero {
+    height: 40vh;
+    color: $pure-white;
+    background-image: url("../images/vacation/Porthcurno_beach_Porthcurno_UK.jpg");
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.6)), url("../images/vacation/Porthcurno_beach_Porthcurno_UK.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    .sec-hero-header {
+        font-size: 5rem;
+    }
+}
+
+.steps {
+    text-align: center;
+    margin: 25px 0;
+    .step-card {
+        @include input-shadow;
+        p {
+            font-size: 2rem;
+        }
+        h3 {
+            margin-top: 0px;
+            color: $brand-red;
+        }
+        i {
+            font-size: 5rem;
+            color: $brand-blue;
+        }
+        padding: 5px;
+        border: 1px solid $font-grey;
+    }
+}
+
+.services {
+    h2 {
+        color: $brand-red;
+    }
+    P {
+        width: 75%;
+    }
+}
+
+.booking {
+    h2 {
+        text-align: center;
+        color: $brand-red;
+    }
+    .booking-card {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        img {
+            width: 100%;
+            height: 100%;
+            @include input-shadow;
+            border-radius: 5px;
+        }
+        h2 {
+            margin-top: 0;
+            color: $brand-blue;
+        }
+        a {
+            background: $brand-light-blue;
+            color: $pure-white;
+        }
+    }
+}
+
+//Contact Us page
+.contact {
+    .contact-card {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 5px 15px;
+        border: 1px solid $font-grey;
+        border-radius: 5px;
+        @include input-shadow;
+        h3 {
+            color: $brand-blue;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            li {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+// Booking
+.booking-secondary-hero {
+    height: 40vh;
+    color: $pure-white;
+    background-image: url("../images/vacation/cayman_islands.jpg");
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.6)), url("../images/vacation/cayman_islands.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    .sec-hero-header {
+        font-size: 5rem;
+    }
+}
+
+.booking-cayman {
+    margin: 25px 0;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    h2 {
+        color: $brand-light-blue;
+    }
+    h3 {
+        margin-top: 0;
+        color: $brand-red;
+    }
+    ul {
+        padding: 0 0 0 15px;
+        li {
+            padding: 3px 0;
+            list-style: none;
+        }
+    }
+    p {
+        font-size: 2rem;
+    }
+    .cost {
+        color: $green;
+    }
+}
+
+.info {
+    background: $font-white;
+    padding: 50px 0;
+    h2 {
+        color: $brand-light-blue;
+    }
+    .mdl-textfield__label {
+        color: $brand-red;
+    }
+    .mdl-textfield__input {
+        border-bottom: 1px solid $brand-red;
+    }
+    a {
+        background: $brand-light-blue;
+        padding: 5px 10px;
+    }
+}
+
+.trending-packages {
+    h2 {
+        color: $brand-red;
+    }
+    a {
+        color: $font-black;
+        width: 100%;
+        padding: 20px 5px;
+        text-decoration: none;
+        font-size: 2.5rem;
+        display: block;
+        height: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.116);
+    }
+    a:hover {
+        color: $brand-light-blue;
+        transition: all ease .3s;
+        background: rgba(0, 0, 0, 0.05);
+        i {
+            transition: all ease .3s;
+            padding-right: 15px;
+        }
+    }
+    i {
+        font-size: 2.5rem;
+        float: right;
+        margin-top: -7px;
+    }
+}
+
+.trending-places {
+    padding: 50px 0;
+    .trending-card1,
+    .trending-card2,
+    .trending-card3 {
+        margin: auto;
+        h2 {
+            color: $pure-white;
+            font-size: 3rem;
+        }
+        .mdl-card__actions {
+            a {
+                background: $brand-red;
+                color: $pure-white;
+                font-size: 1.5rem;
+                margin: 10px 0;
+            }
+        }
+    }
+    .trending-card1 {
+        .mdl-card__title {
+            background: url("../images/vacation/Santorini_Greece.jpg") no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+    .trending-card2 {
+        .mdl-card__title {
+            background: url("../images/vacation/Kaafu_Atoll_Maldives.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+    }
+    .trending-card3 {
+        .mdl-card__title {
+            background: url("../images/vacation/cayman_islands.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+    }
+}
+
+// Media Quieres 
+@media screen and (max-width: 700px) {
+    .hero {
+        .hero-textbox {
+            .hero-header {
+                font-size: 5rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            h4 {
+                font-size: 1.25rem;
+            }
+            i {
+                font-size: 5rem;
+            }
+        }
+    }
+}

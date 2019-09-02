@@ -1,0 +1,30 @@
+@mixin centerer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+@mixin header_shadow {
+    -o-text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    -moz-text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    -webkit-text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    -ms-text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+@mixin input-shadow {
+    -o-box-shadow: 1px 2px 5px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,0.3);
+    -ms-box-shadow: 1px 2px 5px rgba(0,0,0,0.3);
+    -moz-box-shadow: 1px 2px 5px rgba(0,0,0,0.3);
+    box-shadow: 1px 2px 5px rgba(0,0,0,0.3);
+}
+
+@mixin input-shadow-active {
+    -o-box-shadow: 1px 2px 5px rgba(0,0,0,0.55);
+    -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,0.55);
+    -ms-box-shadow: 1px 2px 5px rgba(0,0,0,0.55);
+    -moz-box-shadow: 1px 2px 5px rgba(0,0,0,0.55);
+    box-shadow: 1px 2px 5px rgba(0,0,0,0.55);
+}

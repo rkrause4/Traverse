@@ -1,0 +1,537 @@
+.container {
+  width: 70%;
+  max-width: 1060px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.parent {
+  position: relative;
+}
+
+.child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.mdl-layout__header .mdl-layout__header-row {
+  background: #0097A7;
+}
+
+.mdl-layout__header .mdl-layout__drawer-button {
+  background: #0097A7;
+}
+
+.mdl-layout__header .mdl-layout__drawer-button:active {
+  outline: none;
+  background: #00BCD4;
+}
+
+.mdl-layout__header .mdl-navigation__link {
+  font-size: 1.2rem;
+}
+
+.mdl-layout__header .mdl-layout-title {
+  font-size: 1.75rem;
+}
+
+.mdl-layout__header .mdl-layout__header-row {
+  background: #0097A7;
+}
+
+.mdl-layout__header-row .mdl-navigation__link a {
+  color: #FFFFFF;
+}
+
+footer .mdl-mega-footer__drop-down-section li a {
+  color: #F4F4F4;
+}
+
+footer .mdl-mega-footer__link-list li a {
+  color: #F4F4F4;
+}
+
+.hero {
+  color: #FFFFFF;
+  height: 75vh;
+  background-image: url("../images/cove.jpg");
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../images/cove.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero h1,
+.hero h2,
+.hero h3,
+.hero h4 {
+  -o-text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  -moz-text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  -webkit-text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  -ms-text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.hero .hero-textbox {
+  text-align: center;
+  width: 60%;
+}
+
+.hero .hero-textbox h1 {
+  font-size: 10rem;
+  margin-bottom: 0;
+}
+
+.hero .hero-textbox h2 {
+  margin-top: 0;
+  font-size: 2.25rem;
+  text-transform: capitalize;
+}
+
+.hero .hero-textbox h4 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.hero .hero-textbox i {
+  font-size: 6rem;
+}
+
+.packages {
+  margin: 50px 0;
+}
+
+.packages .mdl-card__supporting-text {
+  height: 200px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.packages .mdl-card__title-text {
+  font-size: 3rem;
+  color: #F4F4F4;
+  -o-text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  -moz-text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  -webkit-text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  -ms-text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.packages .package1 > .mdl-card__title {
+  height: 150px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../images/vacation/cayman_islands.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.packages .package2 > .mdl-card__title {
+  height: 150px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../images/vacation/Imperial_Beach_pier_Imperial_Beach_US.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.packages .package3 > .mdl-card__title {
+  height: 150px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../images/vacation/Porthcurno_beach_Porthcurno_UK.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.packages .package1-btn a {
+  background: #00BCD4;
+  color: #FFFFFF;
+  font-size: 1.2rem;
+}
+
+.packages .package2-btn a {
+  background: #d13e3e;
+  color: #FFFFFF;
+  font-size: 1.2rem;
+}
+
+.packages .mdl-card__supporting-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.packages .mdl-card__supporting-text ul li h5 {
+  margin: 0;
+  color: #d13e3e;
+}
+
+.trending-vacations {
+  background: #F4F4F4;
+  padding: 50px 0;
+}
+
+.trending-vacations h2 {
+  text-align: center;
+  color: #d13e3e;
+}
+
+.trending-vacations .trending-vaca img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  -o-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.trending-vacations .trending-vaca h2 {
+  color: #0097A7;
+  text-align: left;
+}
+
+.trending-vacations .trending-vaca a {
+  display: inline-block;
+  margin: auto;
+  padding: 10px 15px;
+  background: #d13e3e;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.email {
+  margin: auto;
+  text-align: center;
+  background: #B2EBF2;
+  padding: 50px 0;
+}
+
+.email h2 {
+  margin-top: 0;
+  color: #d13e3e;
+  margin-bottom: 15px;
+}
+
+.email p {
+  font-size: 1.2rem;
+  color: #393E46;
+  margin-bottom: 25px;
+}
+
+.email input {
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid transparent;
+  -o-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  width: 25%;
+}
+
+.email input:focus {
+  -o-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.55);
+  -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.55);
+  -ms-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.55);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.55);
+  border: 1px solid #d13e3e;
+}
+
+.email input:active {
+  -o-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.55);
+  -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.55);
+  -ms-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.55);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.55);
+  border: 1px solid #d13e3e;
+}
+
+.secondary-hero {
+  height: 40vh;
+  color: #FFFFFF;
+  background-image: url("../images/vacation/Porthcurno_beach_Porthcurno_UK.jpg");
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.6)), url("../images/vacation/Porthcurno_beach_Porthcurno_UK.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.secondary-hero .sec-hero-header {
+  font-size: 5rem;
+}
+
+.steps {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.steps .step-card {
+  -o-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 5px;
+  border: 1px solid #dfdfdf;
+}
+
+.steps .step-card p {
+  font-size: 2rem;
+}
+
+.steps .step-card h3 {
+  margin-top: 0px;
+  color: #d13e3e;
+}
+
+.steps .step-card i {
+  font-size: 5rem;
+  color: #0097A7;
+}
+
+.services h2 {
+  color: #d13e3e;
+}
+
+.services P {
+  width: 75%;
+}
+
+.booking h2 {
+  text-align: center;
+  color: #d13e3e;
+}
+
+.booking .booking-card {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.booking .booking-card img {
+  width: 100%;
+  height: 100%;
+  -o-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.booking .booking-card h2 {
+  margin-top: 0;
+  color: #0097A7;
+}
+
+.booking .booking-card a {
+  background: #00BCD4;
+  color: #FFFFFF;
+}
+
+.contact .contact-card {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 5px 15px;
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
+  -o-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.contact .contact-card h3 {
+  color: #0097A7;
+}
+
+.contact .contact-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact .contact-card ul li {
+  font-size: 1.2rem;
+}
+
+.booking-secondary-hero {
+  height: 40vh;
+  color: #FFFFFF;
+  background-image: url("../images/vacation/cayman_islands.jpg");
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.6)), url("../images/vacation/cayman_islands.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.booking-secondary-hero .sec-hero-header {
+  font-size: 5rem;
+}
+
+.booking-cayman {
+  margin: 25px 0;
+}
+
+.booking-cayman img {
+  width: 100%;
+  height: 100%;
+}
+
+.booking-cayman h2 {
+  color: #00BCD4;
+}
+
+.booking-cayman h3 {
+  margin-top: 0;
+  color: #d13e3e;
+}
+
+.booking-cayman ul {
+  padding: 0 0 0 15px;
+}
+
+.booking-cayman ul li {
+  padding: 3px 0;
+  list-style: none;
+}
+
+.booking-cayman p {
+  font-size: 2rem;
+}
+
+.booking-cayman .cost {
+  color: #4caf50;
+}
+
+.info {
+  background: #F4F4F4;
+  padding: 50px 0;
+}
+
+.info h2 {
+  color: #00BCD4;
+}
+
+.info .mdl-textfield__label {
+  color: #d13e3e;
+}
+
+.info .mdl-textfield__input {
+  border-bottom: 1px solid #d13e3e;
+}
+
+.info a {
+  background: #00BCD4;
+  padding: 5px 10px;
+}
+
+.trending-packages h2 {
+  color: #d13e3e;
+}
+
+.trending-packages a {
+  color: #212121;
+  width: 100%;
+  padding: 20px 5px;
+  text-decoration: none;
+  font-size: 2.5rem;
+  display: block;
+  height: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.116);
+}
+
+.trending-packages a:hover {
+  color: #00BCD4;
+  transition: all ease .3s;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.trending-packages a:hover i {
+  transition: all ease .3s;
+  padding-right: 15px;
+}
+
+.trending-packages i {
+  font-size: 2.5rem;
+  float: right;
+  margin-top: -7px;
+}
+
+.trending-places {
+  padding: 50px 0;
+}
+
+.trending-places .trending-card1,
+.trending-places .trending-card2,
+.trending-places .trending-card3 {
+  margin: auto;
+}
+
+.trending-places .trending-card1 h2,
+.trending-places .trending-card2 h2,
+.trending-places .trending-card3 h2 {
+  color: #FFFFFF;
+  font-size: 3rem;
+}
+
+.trending-places .trending-card1 .mdl-card__actions a,
+.trending-places .trending-card2 .mdl-card__actions a,
+.trending-places .trending-card3 .mdl-card__actions a {
+  background: #d13e3e;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.trending-places .trending-card1 .mdl-card__title {
+  background: url("../images/vacation/Santorini_Greece.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.trending-places .trending-card2 .mdl-card__title {
+  background: url("../images/vacation/Kaafu_Atoll_Maldives.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.trending-places .trending-card3 .mdl-card__title {
+  background: url("../images/vacation/cayman_islands.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 700px) {
+  .hero .hero-textbox .hero-header {
+    font-size: 5rem;
+  }
+  .hero .hero-textbox h2 {
+    font-size: 1.5rem;
+  }
+  .hero .hero-textbox h4 {
+    font-size: 1.25rem;
+  }
+  .hero .hero-textbox i {
+    font-size: 5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
